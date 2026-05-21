@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>About Us – StrongHer Fitness Spot</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="./index.html" class="logo">StrongHer Fitness Spot</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./services.html" class="submenu-toggle">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Fitness Equipment</a></li>
+                        <li><a href="#">Wellness &amp; Recovery</a></li>
+                        <li><a href="#">Monthly Events</a></li>
+                        <li><a href="#">Her Spot Online</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to our website. We are dedicated to providing valuable information and services to our community.</p>
+
+        <img src="./Images/Gym8.jpeg" alt="StrongHer Gym" class="about-img">
+
+        <p>
+            STRONGHER is more than just a gym — it is a <span class="highlight">movement built for women</span>.
+            We created a safe, empowering space where women can train with confidence, build strength,
+            and become the best version of themselves.
+        </p>
+        <p>
+            Whether you are just starting your fitness journey or pushing your limits, STRONGHER is a place
+            where you are supported, motivated, and celebrated every step of the way.
+        </p>
+
+        <!-- Mission -->
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>
+                To empower women by providing a <span class="highlight">safe, supportive, and inspiring fitness environment
+                where women can focus on their health without fear or discomfort</span>,
+                while promoting strength, confidence, and overall well-being.
+            </p>
+        </div>
+
+        <!-- Vision -->
+        <div class="section">
+            <h2>Our Vision</h2>
+            <p>
+                To become the leading women-only fitness establishment, inspiring women everywhere to
+                embrace their power and live healthier, stronger lives with a stronger sisterhood.
+            </p>
+        </div>
+
+        <!-- Values -->
+        <div class="section">
+            <h2>Our Core Values</h2>
+            <div class="values">
+                <div class="card">
+                    <h3>Empowerment</h3>
+                    <p>We uplift and inspire women to feel confident and strong.</p>
+                </div>
+                <div class="card">
+                    <h3>Community</h3>
+                    <p>We build a supportive sisterhood that motivates each other.</p>
+                </div>
+                <div class="card">
+                    <h3>Strength</h3>
+                    <p>We believe strength is both physical, mental and emotional.</p>
+                </div>
+                <div class="card">
+                    <h3>Wellness</h3>
+                    <p>We promote a balanced and healthy lifestyle.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="section">
+            <h2>Join STRONGHER Today</h2>
+            <p>Start your journey and become the strongest version of yourself.</p>
+            <a href="./contact.html" class="btn">Join Now</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <h2>StrongHer Fitness Spot</h2>
+            <p>Where power meets confidence, be bold. Be StrongHER.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Wellness and Recovery</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>info@StrongHerfitnessspot.com</p>
+            <div class="footer-social">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+        <div class="footer-newletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe and stay in the loop for special events, gym updates and much more!</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    toggle.nextElementSibling.classList.toggle('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
