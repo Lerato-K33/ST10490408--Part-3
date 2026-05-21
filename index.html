@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>StrongHer Fitness Spot</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="#" class="logo">StrongHer Fitness Spot</a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="./services.html" class="submenu-toggle">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Fitness Equipment</a></li>
+                        <li><a href="#">Wellness &amp; Recovery</a></li>
+                        <li><a href="#">Monthly Events</a></li>
+                        <li><a href="#">Her Spot Online</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container carousalmargin">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="./Images/Gym1.jpg" style="height:500px;width:100%;">
+            <div class="text">Caption Text One</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="./Images/Gym2.jpg" style="height:500px;width:100%;">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./Images/Gym3.jpg" style="height:500px;width:100%;">
+            <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="./Images/Gym4.jpg" style="height:500px;width:100%;">
+            <div class="text">Caption Four</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="./Images/Gym5.jpeg" style="height:500px;width:100%;">
+            <div class="text">Caption Five</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <!-- Services -->
+    <div class="services-section">
+        <h2>Available Services</h2>
+        <p>Select your desired service below</p>
+    </div>
+
+    <div class="services-grid">
+        <div class="card">
+            <img src="./Images/Gym9.jpg" alt="Wellness and Recovery">
+            <div class="card-body">
+                <h2>Wellness and Recovery</h2>
+                <p class="title">Hydration Therapy</p>
+                <p>Replenish your body with IV hydration therapy to boost energy, improve recovery, and enhance overall wellness.</p>
+                <p>From R650</p>
+                <button class="button">See more&hellip;</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Images/Gym7.jpg" alt="StrongHer Fitness Online">
+            <div class="card-body">
+                <h2>StrongHer Fitness Online</h2>
+                <p class="title">Workout Sessions</p>
+                <p>From Booty &amp; Core Sculpt to Dance Fitness, Yoga Flow, and Strength Training — all through online coaching.</p>
+                <p>From R250 per month</p>
+                <button class="button">Join Class</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Images/Gym4.jpg" alt="Fitness Equipment">
+            <div class="card-body">
+                <h2>Fitness Equipment</h2>
+                <p class="title">StrongHer Equipment</p>
+                <p>Train smarter with premium equipment: dumbbell sets, treadmills, exercise bikes, yoga mat kits, weights and more.</p>
+                <button class="button">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Images/Gym6.jpg" alt="Monthly Events">
+            <div class="card-body">
+                <h2>Monthly Events</h2>
+                <p class="title">Dance Fitness Party</p>
+                <p>Enjoy a fun, high-energy dance workout with music, lights, and great vibes.</p>
+                <p>Date: 10 June 2026</p>
+                <button class="button">See more&hellip;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <h2>StrongHer Fitness Spot</h2>
+            <p>Where power meets confidence, be bold. Be StrongHER.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Weights and Machine Floor</a></li>
+                <li><a href="#">Wellness and Recovery</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>info@StrongHerfitnessspot.com</p>
+            <div class="footer-social">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+        <div class="footer-newletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe and stay in the loop for special events, gym updates and much more!</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
