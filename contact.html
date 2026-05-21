@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – StrongHer Fitness Spot</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="./index.html" class="logo">StrongHer Fitness Spot</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./services.html" class="submenu-toggle">Services</a>
+                    <ul class="submenu">
+                        <li><a href="#">Fitness Equipment</a></li>
+                        <li><a href="#">Wellness & Recovery</a></li>
+                        <li><a href="#">Monthly Events</a></li>
+                        <li><a href="#">Her Spot Online</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Form -->
+    <div class="contact-section">
+        <h1>Contact Form</h1>
+        <p class="contact-intro">
+            Due to safety purposes, we do not disclose critical information. If you need to get in contact with us,
+            please email us at <strong>info@StrongHERfitnessspot.com</strong>.
+            Alternatively, fill out the form below and we will get back to you within 24 to 48 hours.
+        </p>
+
+        <div class="form-container">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="ename">Your Email</label>
+            <input type="text" id="ename" name="email" placeholder="Your email..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <h2>StrongHer Fitness Spot</h2>
+            <p>Where power meets confidence, be bold. Be StrongHER.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Weights and Machine Floor</a></li>
+                <li><a href="#">Wellness and Recovery</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>info@StrongHERfitnessspot.com</p>
+            <div class="footer-social">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+        <div class="footer-newletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe and stay in the loop for special events, gym updates and much more!</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks  = document.getElementById('navLinks');
+        const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const submenu = toggle.nextElementSibling;
+                    submenu.classList.toggle('open');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
