@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <title>Services – StrongHer Fitness Spot</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="navbar">
+            <a href="./index.html" class="logo">StrongHer Fitness Spot</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li>
+                    <a href="./services.html" class="submenu-toggle">Services</a>
+                    <ul class="submenu">
+                        <li><a href="./services.html#fitness">Fitness Equipment</a></li>
+                        <li><a href="./services.html#wellness">Wellness &amp; Recovery</a></li>
+                        <li><a href="./services.html#events">Monthly Events</a></li>
+                        <li><a href="./services.html#online">Her Spot Online</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="services-hero">
+        <h1>Our Services</h1>
+        <p>Everything you need to train, recover, and thrive — all in one women-only space built for you.</p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="category-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all', this)">All Services</button>
+        <button class="tab-btn" onclick="filterCategory('fitness', this)">Fitness Equipment</button>
+        <button class="tab-btn" onclick="filterCategory('wellness', this)">Wellness &amp; Recovery</button>
+        <button class="tab-btn" onclick="filterCategory('online', this)">Her Spot Online</button>
+        <button class="tab-btn" onclick="filterCategory('events', this)">Monthly Events</button>
+    </div>
+
+    <!-- Fitness Equipment -->
+    <div class="service-category" id="fitness" data-category="fitness">
+        <h2>Fitness Equipment</h2>
+        <p class="cat-desc">Train smarter with our premium women-focused equipment floor.</p>
+        <div class="service-grid">
+
+            <div class="service-card">
+                <img src="./Images/Gym4.jpg" alt="Weights and Machine Floor">
+                <div class="service-card-body">
+                    <span class="service-badge">Floor Access</span>
+                    <h3>Weights &amp; Machine Floor</h3>
+                    <p>Access our full range of free weights, cable machines, barbells, and squat racks in a comfortable, women-only environment.</p>
+                    <p class="service-price">Included with membership</p>
+                    <button class="button">Book a Tour</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="./Images/Gym1.jpg" alt="Cardio Equipment">
+                <div class="service-card-body">
+                    <span class="service-badge">Cardio</span>
+                    <h3>Cardio Zone</h3>
+                    <p>Treadmills, exercise bikes, rowing machines, and ellipticals to get your heart rate up and endurance soaring.</p>
+                    <p class="service-price">Included with membership</p>
+                    <button class="button">Learn More</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="./Images/Gym3.jpg" alt="Group Classes">
+                <div class="service-card-body">
+                    <span class="service-badge">Classes</span>
+                    <h3>In-Person Group Classes</h3>
+                    <p>Join our energetic instructor-led classes: strength circuits, HIIT, Pilates, and more — scheduled weekly.</p>
+                    <p class="service-price">From R150 per class</p>
+                    <button class="button">View Schedule</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Wellness & Recovery -->
+    <div class="service-category" id="wellness" data-category="wellness">
+        <h2>Wellness &amp; Recovery</h2>
+        <p class="cat-desc">Rest, restore, and recharge with our premium wellness offerings.</p>
+        <div class="service-grid">
+
+            <div class="service-card">
+                <img src="./Images/Gym9.jpg" alt="IV Hydration Therapy">
+                <div class="service-card-body">
+                    <span class="service-badge">Hydration</span>
+                    <h3>IV Hydration Therapy</h3>
+                    <p>Replenish your body with targeted IV hydration to boost energy, speed up recovery, and enhance overall wellness — administered by qualified professionals.</p>
+                    <p class="service-price">From R650 per session</p>
+                    <button class="button">Book Session</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">🧘</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Recovery</span>
+                    <h3>Stretch &amp; Mobility Studio</h3>
+                    <p>Dedicated stretch zone with foam rollers, massage guns, resistance bands, and guided recovery sessions to keep your body performing at its best.</p>
+                    <p class="service-price">Included with membership</p>
+                    <button class="button">Learn More</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">💆</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Mind &amp; Body</span>
+                    <h3>Guided Meditation Sessions</h3>
+                    <p>Weekly group and one-on-one meditation sessions designed to reduce stress, improve focus, and build mental resilience alongside your physical training.</p>
+                    <p class="service-price">From R200 per session</p>
+                    <button class="button">Book Session</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Her Spot Online -->
+    <div class="service-category" id="online" data-category="online">
+        <h2>Her Spot Online</h2>
+        <p class="cat-desc">Train from anywhere with our live and on-demand digital coaching platform.</p>
+        <div class="service-grid">
+
+            <div class="service-card">
+                <img src="./Images/Gym7.jpg" alt="Online Coaching">
+                <div class="service-card-body">
+                    <span class="service-badge">Live &amp; On-Demand</span>
+                    <h3>Online Workout Sessions</h3>
+                    <p>Access Booty &amp; Core Sculpt, Dance Fitness, Yoga Flow, and Strength Training classes via live stream or watch on-demand at your convenience.</p>
+                    <p class="service-price">From R250 per month</p>
+                    <button class="button">Join Online</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">📱</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Personalised</span>
+                    <h3>1-on-1 Virtual Coaching</h3>
+                    <p>Work directly with a StrongHer trainer over video call. Personalised programmes, weekly check-ins, and nutrition guidance tailored to your goals.</p>
+                    <p class="service-price">From R600 per month</p>
+                    <button class="button">Get Started</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">🏋️</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Community</span>
+                    <h3>StrongHer Online Community</h3>
+                    <p>Join our private online community. Share progress, get accountability partners, access monthly challenges, and connect with women on the same journey.</p>
+                    <p class="service-price">Free with any online plan</p>
+                    <button class="button">Join the Community</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Monthly Events -->
+    <div class="service-category" id="events" data-category="events">
+        <h2>Monthly Events</h2>
+        <p class="cat-desc">Experience fitness in a whole new way with our exclusive member events.</p>
+        <div class="service-grid">
+
+            <div class="service-card">
+                <img src="./Images/Gym6.jpg" alt="Dance Fitness Party">
+                <div class="service-card-body">
+                    <span class="service-badge">Upcoming</span>
+                    <h3>Dance Fitness Party</h3>
+                    <p>A high-energy dance workout with pumping music, colourful lights, and incredible vibes. Burn calories while having the time of your life.</p>
+                    <p class="service-price">Date: 10 June 2026 &nbsp;|&nbsp; R120 per ticket</p>
+                    <button class="button">Buy Ticket</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">🏃</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Monthly</span>
+                    <h3>StrongHer Challenge Day</h3>
+                    <p>Monthly fitness challenges open to all members — test your strength, endurance, and flexibility in a supportive, competitive environment with prizes for top performers.</p>
+                    <p class="service-price">Free for members</p>
+                    <button class="button">See Schedule</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="img-placeholder">🥗</div>
+                <div class="service-card-body">
+                    <span class="service-badge">Workshop</span>
+                    <h3>Nutrition &amp; Wellness Workshops</h3>
+                    <p>Expert-led workshops covering nutrition planning, supplement basics, hormonal health, and building a balanced lifestyle. Knowledge you can actually use.</p>
+                    <p class="service-price">From R180 per workshop</p>
+                    <button class="button">Register Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Membership Banner -->
+    <div class="membership-banner">
+        <h2>Choose Your Membership</h2>
+        <p>Unlock full access to StrongHer and start your journey today. No lock-in contracts — just results.</p>
+
+        <div class="membership-grid">
+
+            <div class="mem-card">
+                <h3>Basic</h3>
+                <p class="mem-price">R499 <span>/ month</span></p>
+                <ul>
+                    <li>Gym floor access</li>
+                    <li>Cardio zone</li>
+                    <li>Stretch &amp; mobility studio</li>
+                    <li>2 group classes per month</li>
+                </ul>
+                <a href="./contact.html" class="btn">Get Started</a>
+            </div>
+
+            <div class="mem-card featured">
+                <div class="mem-popular">Most Popular</div>
+                <h3>StrongHer</h3>
+                <p class="mem-price">R799 <span>/ month</span></p>
+                <ul>
+                    <li>Everything in Basic</li>
+                    <li>Unlimited group classes</li>
+                    <li>Her Spot Online access</li>
+                    <li>1 wellness session/month</li>
+                    <li>Priority event booking</li>
+                </ul>
+                <a href="./contact.html" class="btn">Get Started</a>
+            </div>
+
+            <div class="mem-card">
+                <h3>Elite</h3>
+                <p class="mem-price">R1,199 <span>/ month</span></p>
+                <ul>
+                    <li>Everything in StrongHer</li>
+                    <li>Monthly 1-on-1 coaching</li>
+                    <li>2 IV hydration sessions</li>
+                    <li>Free event tickets</li>
+                    <li>Nutrition workshop access</li>
+                </ul>
+                <a href="./contact.html" class="btn">Get Started</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">
+            <h2>StrongHer Fitness Spot</h2>
+            <p>Where power meets confidence, be bold. Be StrongHER.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Memberships</a></li>
+                <li><a href="#">Weights and Machine Floor</a></li>
+                <li><a href="#">Wellness and Recovery</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>info@StrongHerfitnessspot.com</p>
+            <div class="footer-social">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+        <div class="footer-newletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe and stay in the loop for special events, gym updates and much more!</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    toggle.nextElementSibling.classList.toggle('open');
+                }
+            });
+        });
+
+        function filterCategory(cat, btn) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.service-category').forEach(section => {
+                if (cat === 'all' || section.dataset.category === cat) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="./services.html#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                const id = link.getAttribute('href').split('#')[1];
+                const target = document.getElementById(id);
+                if (target) {
+                    e.preventDefault();
+                    filterCategory(id, document.querySelector(`.tab-btn[onclick*="${id}"]`) || document.querySelector('.tab-btn'));
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
